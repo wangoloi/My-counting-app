@@ -1,6 +1,21 @@
-body{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 2em;
-    background-color: cyan;
+#countlebel{
+    display: block;
+    text-align: center;
+    font-size: 10em;
+    font-family: Helvetica;
 
+}
+#BTTNcontainer{
+    text-align: center; /*this sets the button in the center*/
+}
+.buttons{
+    padding: 10px 20px ;/*this increases the button size*/
+    border: none; /*this removes the border from a button*/
+    background-color: rgb(127, 136, 255); /*this sets the background color of the button*/
+    color: white; /*this sets the text color of the button*/
+    cursor: pointer; /*this changes the cursor to a hand when you hover over the button*/
+    transition: background-color 0.25s; /*this adds a transition effect to the button*/
+}
+.buttons:hover{
+    background-color: rgb(31, 126, 35);/*this sets a different background color when you hover over the button*/
 }
