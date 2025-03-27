@@ -1,9 +1,20 @@
-// console.log('hello');
-// console.log('i like coding in javascript')
+const decreasebttn = document.getElementById("DecreaseBTTN");
+const resetbttn = document.getElementById("ResetBTTN");
+const increasebttn = document.getElementById("IncreaseBTTN");
+const countlebel = document.getElementById("countlebel");
+let count = 0;
 
-// window.alert('This is an error') //this is how we print alert messages on the web pages
+increasebttn.onclick = function(){
+    count++;
+    countlebel.textContent = count;
+}
 
-// window.alert('Go back Please');
+decreasebttn.onclick = function(){
+    count--;
+    countlebel.textContent = count;
+}
 
-document.getElementById("myH1").textContent = "MediHive App"; //this is how we change the text of the element with id my
-document.getElementById("myP1").textContent = "This a management application for drugshops and pharmacies.";
+resetbttn.onclick = function(){
+    count = 0;
+    countlebel.textContent = count;
+}
